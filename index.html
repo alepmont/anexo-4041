@@ -23,7 +23,7 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
       <div class="nav-links" id="nav-links">
         <a href="#escuela">La escuela</a>
-        <a href="#modalidad">Modalidad y cursos</a>
+        <a href="#modalidad">Modalidad y Cursos</a>
         <a href="#actividades">Actividades</a>
         <a class="nav-cta" href="#contacto">Conocenos</a>
       </div>
@@ -32,7 +32,7 @@
 
   <main>
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <img class="hero-photo" src="imagenes/25M_2.jpeg" alt="Estudiantes y comunidad educativa reunidos en una actividad escolar">
+      <img class="hero-photo" src="imagenes/portada.jpeg" alt="Estudiantes y comunidad educativa reunidos en una actividad escolar">
       <div class="hero-content wrap">
         <p class="eyebrow">Lavalle · Barrio Jarilleros</p>
         <h1 id="hero-title">Una nueva casa para aprender informática.</h1>
@@ -131,9 +131,9 @@
               <li>Matemática</li>
               <li>Inglés Técnico</li>
               <li>Educación Física</li>
-              <li>Historia / Geografía (o espacios de contextualización social y política)</li>
-              <li>Física / Química (según orientación institucional)</li>
-              <li>Hardware y Arquitectura de Computadoras (componentes físicos, montaje, configuración y mantenimiento)</li>
+              <li>Historia</li>
+              <li>Física</li>
+              <li>Hardware y Arquitectura de Computadoras</li>
               <li>Sistemas de Información y Bases de Datos</li>
               <li>Programación I</li>
               <li>Diseño Multimedial</li>
@@ -144,10 +144,10 @@
             <h3>5° Año <span class="course-cycle">Ciclo Orientado</span></h3>
             <ul>
               <li>Lengua y Literatura</li>
-              <li>Matemática (aplicada / financiera o superior según orientación)</li>
+              <li>Matemática</li>
               <li>Inglés Técnico</li>
               <li>Educación Física</li>
-              <li>Formación Ética / Ciudadanía / Problemáticas Sociopolíticas</li>
+              <li>Formación Ética yCiudadanía</li>
               <li>Redes y Conectividad</li>
               <li>Programación II</li>
               <li>Gestión de Proyectos Informáticos</li>
@@ -155,7 +155,6 @@
             </ul>
           </article>
         </div>
-        <p class="curriculum-note">Las materias y denominaciones con alternativas pueden variar según la orientación y el plan de estudios institucional.</p>
       </div>
     </section>
 
@@ -167,17 +166,41 @@
           <p>Celebraciones, encuentros y actividades que hacen especial el año escolar en nuestra comunidad.</p>
         </div>
         <div class="gallery">
-          <article class="gallery-card">
-            <img src="imagenes/25M_3.jpeg" alt="Decoración y actividades escolares para el acto del 25 de Mayo" loading="lazy">
+          <article class="gallery-card activity-carousel" aria-label="Fotos del 25 de Mayo">
+            <div class="carousel-frame">
+              <img class="carousel-slide is-active" src="imagenes/25M_1.jpeg" alt="Estudiantes participando de la celebración del 25 de Mayo" loading="lazy">
+              <img class="carousel-slide" src="imagenes/25M_2.jpeg" alt="Comunidad educativa reunida por el 25 de Mayo" loading="lazy" aria-hidden="true">
+              <img class="carousel-slide" src="imagenes/25M_3.jpeg" alt="Decoración y actividades escolares para el acto del 25 de Mayo" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-button" type="button" data-direction="-1" aria-label="Foto anterior del 25 de Mayo">←</button>
+              <span class="carousel-count" aria-live="polite">1 / 3</span>
+              <button class="carousel-button" type="button" data-direction="1" aria-label="Foto siguiente del 25 de Mayo">→</button>
+            </div>
             <div class="gallery-caption"><span>Tradición y memoria</span><h3>25 de Mayo</h3></div>
           </article>
-          <article class="gallery-card">
-            <img src="imagenes/salida_cine.jpeg" alt="Estudiantes compartiendo una salida y actividad escolar" loading="lazy">
-            <div class="gallery-caption"><span>Amistad y alegría</span><h3>Semana del estudiante</h3></div>
+          <article class="gallery-card activity-carousel" aria-label="Fotos del Día del Preceptor">
+            <div class="carousel-frame">
+              <img class="carousel-slide is-active" src="imagenes/diapreceptora1.jpeg" alt="Celebración del Día del Preceptor en la escuela" loading="lazy">
+              <img class="carousel-slide" src="imagenes/diapreceptora2.jpeg" alt="Estudiantes y docentes reunidos por el Día del Preceptor" loading="lazy" aria-hidden="true">
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-button" type="button" data-direction="-1" aria-label="Foto anterior del Día del Preceptor">←</button>
+              <span class="carousel-count" aria-live="polite">1 / 2</span>
+              <button class="carousel-button" type="button" data-direction="1" aria-label="Foto siguiente del Día del Preceptor">→</button>
+            </div>
+            <div class="gallery-caption"><span>Gracias por acompañar</span><h3>Día del Preceptor</h3></div>
           </article>
-          <article class="gallery-card">
-            <img src="imagenes/diapreceptora2.jpeg" alt="Estudiantes y docentes reunidos en una celebración escolar" loading="lazy">
-            <div class="gallery-caption"><span>Gracias por acompañar</span><h3>Día del preceptor</h3></div>
+          <article class="gallery-card activity-carousel" aria-label="Fotos de la salida al cine">
+            <div class="carousel-frame">
+              <img class="carousel-slide is-active" src="imagenes/salida_cine.jpeg" alt="Estudiantes disfrutando de una salida al cine" loading="lazy">
+            </div>
+            <div class="carousel-controls">
+              <button class="carousel-button" type="button" data-direction="-1" aria-label="Foto anterior de la salida al cine">←</button>
+              <span class="carousel-count" aria-live="polite">1 / 1</span>
+              <button class="carousel-button" type="button" data-direction="1" aria-label="Foto siguiente de la salida al cine">→</button>
+            </div>
+            <div class="gallery-caption"><span>Recreación</span><h3>Salida al cine</h3></div>
           </article>
         </div>
       </div>

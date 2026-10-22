@@ -15,3 +15,23 @@ navigation.addEventListener("click", (event) => {
     navigation.classList.remove("is-open");
   }
 });
+
+document.querySelectorAll(".activity-carousel").forEach((carousel) => {
+  const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
+  const count = carousel.querySelector(".carousel-count");
+  const buttons = carousel.querySelectorAll(".carousel-button");
+  let activeIndex = 0;
+
+  buttons.forEach((button) => {
+    button.disabled = slides.length < 2;
+    button.addEventListener("click", () => {
+      activeIndex = (activeIndex + Number(button.dataset.direction) + slides.length) % slides.length;
+      slides.forEach((slide, index) => {
+        const isActive = index === activeIndex;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", String(!isActive));
+      });
+      count.textContent = `${activeIndex + 1} / ${slides.length}`;
+    });
+  });
+});
